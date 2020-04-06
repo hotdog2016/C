@@ -45,6 +45,8 @@ flags = [
 '/usr/include',
 '-isystem',
 '/usr/local/include',
+'-isystem',
+'/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include',
 '-I',
 '~/workspace/bishi/inc',
 ]

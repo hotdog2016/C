@@ -1,0 +1,184 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a3c87ab5/
+%.o	5/makefile	/^%.o: %.c$/;"	t
+%.o	6/makefile	/^%.o: %.c$/;"	t
+%.o	7/makefile	/^%.o: %.c$/;"	t
+%.o	8/makefile	/^%.o: %.c$/;"	t
+%.o	queue/Makefile	/^%.o:%.c$/;"	t
+%.o	test/Makefile	/^%.o:%.c$/;"	t
+A_H	test/a/a.h	/^#define A_H$/;"	d
+BITREE	8/test_8_1.c	/^}BITREE;$/;"	t	typeref:struct:BiTree	file:
+BITREE	inc/tree.h	/^}BITREE;$/;"	t	typeref:struct:BiTree
+B_H	test/b/b.h	/^#define B_H$/;"	d
+BiTree	8/test_8_1.c	/^typedef struct BiTree{$/;"	s	file:
+BiTree	inc/tree.h	/^typedef struct BiTree{$/;"	s
+COLUMNS	12/test_12_1.c	/^#define COLUMNS /;"	d	file:
+COLUMNS	13/test_13_1.c	/^#define COLUMNS /;"	d	file:
+DirectoryOfThisScript	.ycm_extra_conf.py	/^def DirectoryOfThisScript():$/;"	f
+EndOrderTraverse	7/test_7_1.c	/^void EndOrderTraverse(PTREE T)$/;"	f	typeref:typename:void
+EndOrderTraverse	8/test_8_1.c	/^void EndOrderTraverse(BITREE *T)$/;"	f	typeref:typename:void
+EndOrderTraverse	tree/tree.c	/^void EndOrderTraverse(BITREE *T)$/;"	f	typeref:typename:void
+FlagsForFile	.ycm_extra_conf.py	/^def FlagsForFile( filename, **kwargs ):$/;"	f
+GetCompilationInfoForFile	.ycm_extra_conf.py	/^def GetCompilationInfoForFile( filename ):$/;"	f
+InOrderTraverse	7/test_7_1.c	/^void InOrderTraverse(PTREE T)$/;"	f	typeref:typename:void
+InOrderTraverse	8/test_8_1.c	/^void InOrderTraverse(BITREE *T)$/;"	f	typeref:typename:void
+InOrderTraverse	tree/tree.c	/^void InOrderTraverse(BITREE *T)$/;"	f	typeref:typename:void
+IsHeaderFile	.ycm_extra_conf.py	/^def IsHeaderFile( filename ):$/;"	f
+LEN	sort/sort.c	/^#define LEN /;"	d	file:
+ListNode	6/test_6_1.c	/^}ListNode;$/;"	t	typeref:struct:Node	file:
+MAXSIZE	8/test_8_1.c	/^#define MAXSIZE /;"	d	file:
+MAXSIZE	tree/tree.c	/^#define MAXSIZE /;"	d	file:
+MakeRelativePathsInFlagsAbsolute	.ycm_extra_conf.py	/^def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):$/;"	f
+Node	6/test_6_1.c	/^typedef struct Node{$/;"	s	file:
+PTREE	7/test_7_1.c	/^ }TREENODE,*PTREE;$/;"	t	typeref:struct:Tree *	file:
+PreOrderTraverse	7/test_7_1.c	/^void PreOrderTraverse(PTREE  T)$/;"	f	typeref:typename:void
+PreOrderTraverse	8/test_8_1.c	/^void PreOrderTraverse(BITREE * T)$/;"	f	typeref:typename:void
+PreOrderTraverse	tree/tree.c	/^void PreOrderTraverse(BITREE * T)$/;"	f	typeref:typename:void
+QUEUE_H	inc/queue.h	/^#define QUEUE_H$/;"	d
+ROWS	12/test_12_1.c	/^#define ROWS /;"	d	file:
+ROWS	13/test_13_1.c	/^#define ROWS /;"	d	file:
+SOURCE_EXTENSIONS	.ycm_extra_conf.py	/^SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', '.m', '.mm' ]$/;"	v
+STACK	6/test_6_1.c	/^}STACK;$/;"	t	typeref:struct:stack	file:
+STACK_H	inc/stack.h	/^#define STACK_H$/;"	d
+StrAssign	8/test_8_1.c	/^int StrAssign(String T,char *chars)$/;"	f	typeref:typename:int
+StrAssign	tree/tree.c	/^int StrAssign(String T,char *chars)$/;"	f	typeref:typename:int
+String	8/test_8_1.c	/^typedef char  String[100];$/;"	t	typeref:typename:char[100]	file:
+String	inc/tree.h	/^typedef char  String[100];$/;"	t	typeref:typename:char[100]
+TREENODE	7/test_7_1.c	/^ }TREENODE,*PTREE;$/;"	t	typeref:struct:Tree	file:
+TREE_H	inc/tree.h	/^#define TREE_H$/;"	d
+Tree	7/test_7_1.c	/^ typedef struct Tree{$/;"	s	file:
+VECTOR_SIZE	3/test3_2.c	/^#define VECTOR_SIZE /;"	d	file:
+VICTOR_SIZE	3/test3_1.c	/^#define VICTOR_SIZE /;"	d	file:
+a	test/a/a.c	/^void a()$/;"	f	typeref:typename:void
+add_node	6/test_6_1.c	/^int add_node(ListNode *pList,ListNode * pNode)$/;"	f	typeref:typename:int
+append_tail	9/queue.c	/^int append_tail(int val)$/;"	f	typeref:typename:int
+append_tail	9/test_9_1.c	/^int append_tail(int val)$/;"	f	typeref:typename:int
+append_tail	queue/queue.c	/^int append_tail(int val)$/;"	f	typeref:typename:int
+b	test/b/b.c	/^void b()$/;"	f	typeref:typename:void
+change_string	5/test5_1.c	/^int change_string(char * string,int blank_counts)$/;"	f	typeref:typename:int
+cheack_blank	5/test5_1.c	/^int cheack_blank(const char * string)$/;"	f	typeref:typename:int
+check	13/test_13_1.c	/^int check(int *matrix,int rows,int columns,int row,int col,int max,bool *bool_matrix)$/;"	f	typeref:typename:int
+check_parent	8/test_8_1.c	/^BITREE *check_parent(BITREE * node)$/;"	f	typeref:typename:BITREE *
+clean	queue/Makefile	/^clean:$/;"	t
+clean	test/Makefile	/^clean:$/;"	t
+compilation_database_folder	.ycm_extra_conf.py	/^compilation_database_folder = ''$/;"	v
+construct_tree	7/test_7_1.c	/^PTREE construct_tree(int *PreOrderStart,\\$/;"	f	typeref:typename:PTREE
+construct_tree_core	7/test_7_1.c	/^PTREE construct_tree_core(int *PreOrderStart,\\$/;"	f	typeref:typename:PTREE
+count_path	13/test_13_1.c	/^int count_path(int *matrix,int rows,int columns,int max)$/;"	f	typeref:typename:int
+count_range	3/test3_2.c	/^int count_range(int * vector,int lenth,int start,int end)$/;"	f	typeref:typename:int
+creat_list	6/test_6_1.c	/^ListNode *creat_list(int num)$/;"	f	typeref:typename:ListNode *
+creat_node	6/test_6_1.c	/^ListNode * creat_node(int num)$/;"	f	typeref:typename:ListNode *
+creat_queue	9/queue.c	/^void creat_queue()$/;"	f	typeref:typename:void
+creat_queue	9/test_9_1.c	/^void creat_queue()$/;"	f	typeref:typename:void
+creat_queue	queue/queue.c	/^void creat_queue()$/;"	f	typeref:typename:void
+creat_stack	6/test_6_1.c	/^STACK * creat_stack()$/;"	f	typeref:typename:STACK *
+creat_stack	stack/stack.c	/^struct stack *creat_stack()$/;"	f	typeref:struct:stack *
+creat_tree	8/test_8_1.c	/^void creat_tree(BITREE **T)$/;"	f	typeref:typename:void
+creat_tree	tree/tree.c	/^void creat_tree(BITREE **T)$/;"	f	typeref:typename:void
+data	8/test_8_1.c	/^	char data;$/;"	m	struct:BiTree	typeref:typename:char	file:
+data	inc/tree.h	/^	char data;$/;"	m	struct:BiTree	typeref:typename:char
+database	.ycm_extra_conf.py	/^  database = ycm_core.CompilationDatabase( compilation_database_folder )$/;"	v
+delete_head	9/queue.c	/^int delete_head()$/;"	f	typeref:typename:int
+delete_head	9/test_9_1.c	/^int delete_head()$/;"	f	typeref:typename:int
+delete_head	queue/queue.c	/^int delete_head()$/;"	f	typeref:typename:int
+digital_sum	13/test_13_1.c	/^int digital_sum(int num)$/;"	f	typeref:typename:int
+find_lchild	8/test_8_1.c	/^BITREE * find_lchild(BITREE * T)$/;"	f	typeref:typename:BITREE *
+find_node	8/test_8_1.c	/^void find_node(BITREE * T,char data,BITREE ** node)$/;"	f	typeref:typename:void
+find_num	4/test4_1.c	/^int find_num(int vector[4][4],int culomn,int row,int num)$/;"	f	typeref:typename:int
+flags	.ycm_extra_conf.py	/^flags = [$/;"	v
+foo	10/test_10_1.c	/^unsigned long long foo(int n)$/;"	f	typeref:typename:unsigned long long
+get_next_node	8/test_8_1.c	/^BITREE * get_next_node(BITREE *node)$/;"	f	typeref:typename:BITREE *
+has_path	12/test_12_1.c	/^bool has_path(char *matrix,\\$/;"	f	typeref:typename:bool
+head	inc/queue.h	/^	struct stack *head;$/;"	m	struct:queue	typeref:struct:stack *
+iInOrder	7/test_7_1.c	/^int iInOrder[8]={4,7,2,1,5,3,8,6};$/;"	v	typeref:typename:int[8]
+iPreOrder	7/test_7_1.c	/^int iPreOrder[8]={1,2,4,7,3,5,6,8};$/;"	v	typeref:typename:int[8]
+is_empty_stack	stack/stack.c	/^bool is_empty_stack(struct stack *stack)$/;"	f	typeref:typename:bool
+j	8/test_8_1.c	/^int j=1;$/;"	v	typeref:typename:int
+j	tree/tree.c	/^int j=1;$/;"	v	typeref:typename:int
+lchild	7/test_7_1.c	/^	 struct Tree *lchild;$/;"	m	struct:Tree	typeref:struct:Tree *	file:
+lchild	8/test_8_1.c	/^	struct BiTree *lchild;$/;"	m	struct:BiTree	typeref:struct:BiTree *	file:
+lchild	inc/tree.h	/^	struct BiTree *lchild;$/;"	m	struct:BiTree	typeref:struct:BiTree *
+main	10/test_10_1.c	/^int main()$/;"	f	typeref:typename:int
+main	11/test_11_1.c	/^int main()$/;"	f	typeref:typename:int
+main	12/test_12_1.c	/^int main()$/;"	f	typeref:typename:int
+main	13/test_13_1.c	/^int main()$/;"	f	typeref:typename:int
+main	3/test3_1.c	/^int main()$/;"	f	typeref:typename:int
+main	3/test3_2.c	/^int main()$/;"	f	typeref:typename:int
+main	4/test4_1.c	/^int main()$/;"	f	typeref:typename:int
+main	5/makefile	/^main:$(objects)$/;"	t
+main	5/test5_1.c	/^int main()$/;"	f	typeref:typename:int
+main	6/makefile	/^main:$(objects)$/;"	t
+main	6/test_6_1.c	/^int main()$/;"	f	typeref:typename:int
+main	7/makefile	/^main:$(objects)$/;"	t
+main	7/test_7_1.c	/^int main()$/;"	f	typeref:typename:int
+main	8/makefile	/^main:$(objects)$/;"	t
+main	8/test_8_1.c	/^int main()$/;"	f	typeref:typename:int
+main	9/queue.c	/^int main()$/;"	f	typeref:typename:int
+main	9/test_9_1.c	/^int main()$/;"	f	typeref:typename:int
+main	queue/Makefile	/^main:$(objs)$/;"	t
+main	queue/queue.c	/^int main()$/;"	f	typeref:typename:int
+main	sort/sort.c	/^int main()$/;"	f	typeref:typename:int
+main	test/Makefile	/^main:main.o $(objs)$/;"	t
+main	test/main.c	/^int main()$/;"	f	typeref:typename:int
+min	11/test_11_1.c	/^int min(int *numbers , int length)$/;"	f	typeref:typename:int
+next	6/test_6_1.c	/^	struct stack *next;$/;"	m	struct:stack	typeref:struct:stack *	file:
+next	inc/stack.h	/^	struct stack *next;$/;"	m	struct:stack	typeref:struct:stack *
+num	6/test_6_1.c	/^	int num;$/;"	m	struct:Node	typeref:typename:int	file:
+num	6/test_6_1.c	/^	int num;$/;"	m	struct:stack	typeref:typename:int	file:
+num	inc/stack.h	/^	int num;$/;"	m	struct:stack	typeref:typename:int
+objects	5/makefile	/^objects := $(patsubst %.c,%.o,$(wildcard *.c))$/;"	m
+objects	6/makefile	/^objects := $(patsubst %.c,%.o,$(wildcard *.c))$/;"	m
+objects	7/makefile	/^objects := $(patsubst %.c,%.o,$(wildcard *.c))$/;"	m
+objects	8/makefile	/^objects := $(patsubst %.c,%.o,$(wildcard *.c))$/;"	m
+objs	queue/Makefile	/^objs =  queue.o tree.o stack.o$/;"	m
+objs	test/Makefile	/^objs =  main.o tree.o$/;"	m
+pHead	6/test_6_1.c	/^	struct Node * pHead;$/;"	m	struct:Node	typeref:struct:Node *	file:
+pNext	6/test_6_1.c	/^	struct Node * pNext;$/;"	m	struct:Node	typeref:struct:Node *	file:
+pTail	6/test_6_1.c	/^	struct Node * pTail;$/;"	m	struct:Node	typeref:struct:Node *	file:
+parent	8/test_8_1.c	/^	struct BiTree *parent;$/;"	m	struct:BiTree	typeref:struct:BiTree *	file:
+pop	6/test_6_1.c	/^int pop(STACK * stack)$/;"	f	typeref:typename:int
+pop	stack/stack.c	/^int pop(struct stack * stack)$/;"	f	typeref:typename:int
+pop_all	6/test_6_1.c	/^int pop_all(STACK * stack)$/;"	f	typeref:typename:int
+print_shuzu	3/test3_1.c	/^int print_shuzu(int temp[])$/;"	f	typeref:typename:int
+push	6/test_6_1.c	/^int push(int num,STACK * stack)$/;"	f	typeref:typename:int
+push	stack/stack.c	/^int push(int num,struct stack * stack)$/;"	f	typeref:typename:int
+queue	inc/queue.h	/^struct queue{$/;"	s
+quick	sort/sort.c	/^void quick(int *numbers,int length,int start,int end)$/;"	f	typeref:typename:void
+rchild	7/test_7_1.c	/^	 struct Tree *rchild;$/;"	m	struct:Tree	typeref:struct:Tree *	file:
+rchild	8/test_8_1.c	/^	struct BiTree *rchild;$/;"	m	struct:BiTree	typeref:struct:BiTree *	file:
+rchild	inc/tree.h	/^	struct BiTree *rchild;$/;"	m	struct:BiTree	typeref:struct:BiTree *
+repeat	3/test3_1.c	/^int repeat;$/;"	v	typeref:typename:int
+search_path	12/test_12_1.c	/^bool search_path(char *matrix,\\$/;"	f	typeref:typename:bool
+show_list	6/test_6_1.c	/^int show_list(ListNode *List)$/;"	f	typeref:typename:int
+show_nums	sort/sort.c	/^void show_nums(int *numbers,int length)$/;"	f	typeref:typename:void
+show_string	5/test5_1.c	/^int show_string(const char * string)$/;"	f	typeref:typename:int
+show_vector	4/test4_1.c	/^int show_vector(int vector[4][4],int column,int row)$/;"	f	typeref:typename:int
+stack	6/test_6_1.c	/^STACK *stack = NULL;$/;"	v	typeref:typename:STACK *
+stack	6/test_6_1.c	/^typedef struct stack{$/;"	s	file:
+stack	inc/stack.h	/^struct stack{$/;"	s
+stack1	9/queue.c	/^struct stack *stack1 = NULL;$/;"	v	typeref:struct:stack *
+stack1	9/test_9_1.c	/^struct stack *stack1 = NULL;$/;"	v	typeref:struct:stack *
+stack1	queue/queue.c	/^struct stack *stack1 = NULL;$/;"	v	typeref:struct:stack *
+stack1_to_stack2	9/queue.c	/^void stack1_to_stack2(struct stack *stack1,struct stack *stack2)$/;"	f	typeref:typename:void
+stack1_to_stack2	9/test_9_1.c	/^void stack1_to_stack2(struct stack *stack1,struct stack *stack2)$/;"	f	typeref:typename:void
+stack1_to_stack2	queue/queue.c	/^void stack1_to_stack2(struct stack *stack1,struct stack *stack2)$/;"	f	typeref:typename:void
+stack2	9/queue.c	/^struct stack *stack2 = NULL;$/;"	v	typeref:struct:stack *
+stack2	9/test_9_1.c	/^struct stack *stack2 = NULL;$/;"	v	typeref:struct:stack *
+stack2	queue/queue.c	/^struct stack *stack2 = NULL;$/;"	v	typeref:struct:stack *
+str	8/test_8_1.c	/^String str;$/;"	v	typeref:typename:String
+str	inc/tree.h	/^String str;$/;"	v	typeref:typename:String
+swap	3/test3_1.c	/^int swap(int * a,int * b)$/;"	f	typeref:typename:int
+swap	sort/sort.c	/^void swap(int *num1,int *num2)$/;"	f	typeref:typename:void
+tail	inc/queue.h	/^	struct stack *tail;$/;"	m	struct:queue	typeref:struct:stack *
+test	11/test_11_1.c	/^int test(int *numbers,int length)$/;"	f	typeref:typename:int
+test3	3/test3_1.c	/^int test3(int temp[])$/;"	f	typeref:typename:int
+top	6/test_6_1.c	/^	struct stack *top;$/;"	m	struct:stack	typeref:struct:stack *	file:
+top	inc/stack.h	/^	struct stack *top;$/;"	m	struct:stack	typeref:struct:stack *
+val	7/test_7_1.c	/^	 int val;$/;"	m	struct:Tree	typeref:typename:int	file:
+vector	4/test4_1.c	/^int vector[4][4]={{1,2,4,5},\\$/;"	v	typeref:typename:int[4][4]
