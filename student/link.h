@@ -14,7 +14,6 @@ struct Student{
 	char sex[MAX];
     int age;
 };
-
 struct Node {
 	struct Student message;
  	struct Node *head ;

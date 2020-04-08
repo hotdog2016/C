@@ -58,6 +58,7 @@ void InOrderTraverse(BITREE *T)
 	printf("%c",T->data);
 	InOrderTraverse(T->rchild);
 }
+
 void EndOrderTraverse(BITREE *T)
 {
 	if(T==NULL)

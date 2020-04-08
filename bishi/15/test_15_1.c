@@ -2,10 +2,10 @@
 int num_of_1(int num)
 {
 	int counts=0;
-	while(num)
+	while ( num )
 	{
 		counts++;
-		num &= (num-1);
+		num &= ( num-1 );
 	}
 	return counts;
 }

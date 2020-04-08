@@ -2,10 +2,9 @@
 #include"../inc/stack.h"
 #include<stdio.h>
 #include<stdlib.h>
-
 struct stack *stack1 = NULL;
-struct stack *stack2 = NULL;
 
+struct stack *stack2 = NULL;
 void stack1_to_stack2(struct stack *stack1,struct stack *stack2)
 {
 	int tmp;
@@ -18,7 +17,6 @@ void stack1_to_stack2(struct stack *stack1,struct stack *stack2)
 		push(tmp,stack2);
 	}
 }
-
 void creat_queue()
 {
 	stack1 = creat_stack();
@@ -28,14 +26,12 @@ void creat_queue()
 		return;
 	}
 }
-
 int append_tail(int val)
 {
 	if(stack1 != NULL&&stack2 != NULL)
 		push(val,stack1);
 	return 0;
 }
-
 int delete_head()
 {
 	if(stack2 == NULL){
@@ -70,5 +66,3 @@ int main()
 	append_tail(6);
 	delete_head();
 }
-
-
