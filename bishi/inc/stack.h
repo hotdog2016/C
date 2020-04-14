@@ -1,13 +1,18 @@
 #ifndef STACK_H
 #define STACK_H
-#include<stdbool.h>
+
+#include <stdbool.h>
+
 struct stack{
-	int num;
-	struct stack *top;
+	void *data;
+	void (*push)(void *,struct stack **);
+	void *(*pop)(struct stack **);
+	void *(*get_min)(struct stack *);
+	struct stack *min_stack;
 	struct stack *next;
 };
+
+typedef struct stack Stack;
 struct stack *creat_stack();
-int push(int num,struct stack * stack);
-int pop(struct stack * stack);
-bool is_empty_stack(struct stack *stack);
+bool is_empty(struct stack *);
 #endif 

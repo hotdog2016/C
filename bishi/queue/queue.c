@@ -1,68 +1,77 @@
-#include"../inc/queue.h"
-#include"../inc/stack.h"
 #include<stdio.h>
 #include<stdlib.h>
-struct stack *stack1 = NULL;
+#include"../inc/queue.h"
 
-struct stack *stack2 = NULL;
-void stack1_to_stack2(struct stack *stack1,struct stack *stack2)
+static void push_core(void *,struct queue **);
+static void *pop_core(struct queue **);
+static struct queue *init_core();
+struct queue *creat_queue();
+
+
+static struct queue *init_core()
 {
-	int tmp;
-	if(stack1 ==NULL){
-		printf("stack error");
+	struct queue *top;
+	top=(struct queue *)malloc(sizeof(struct queue));
+	top->data = NULL;
+	top->push = push_core; 
+	top->pop  = pop_core;
+	top->tail = NULL;
+	top->next = NULL;
+	return top;
+}
+
+static void push_core(void *p, struct queue **queue)
+{
+	struct queue *tmp = *queue;
+	struct queue *new = NULL;
+	if ( NULL == p ) {
+		return ;
+	}
+
+	//当前队列为空
+	if (NULL == (*queue)->tail) {
+		(*queue)->data = p;
+		(*queue)->tail = (*queue);
 		return;
 	}
-	while(!is_empty_stack(stack1)){
-		tmp=pop(stack1);
-		push(tmp,stack2);
-	}
+
+	new = init_core();
+	new->data = p;
+
+	(*queue)->tail->next = new;
+	(*queue)->tail = (*queue)->tail->next;
 }
-void creat_queue()
+
+
+static void *pop_core(struct queue **queue)
 {
-	stack1 = creat_stack();
-	stack2 = creat_stack();
-	if(stack2 == NULL || stack1 == NULL){
-		printf("creat queue error\n");
-		return;
+	struct queue *tmp=NULL;
+
+	if(NULL == (*queue)->tail)
+	{
+		printf("empty\n");
+		return NULL;
 	}
+
+	void *p = (*queue)->data;
+	tmp = *queue;
+
+	//只有一个节点了
+	if((*queue)->tail == (*queue)) {
+		(*queue)->tail = NULL;
+		return p;
+	}
+
+	(*queue)->next->tail = (*queue)->tail;
+	*queue = (*queue)->next;
+	free(tmp);
+	tmp = NULL;
+	return p;
 }
-int append_tail(int val)
+
+struct queue *creat_queue()
 {
-	if(stack1 != NULL&&stack2 != NULL)
-		push(val,stack1);
-	return 0;
+	return init_core();
 }
-int delete_head()
-{
-	if(stack2 == NULL){
-		printf("stack error\n");
-		return 1;
-	}
-	if(!is_empty_stack(stack2)){
-		printf("delete %d\n",stack2->top->num);
-		pop(stack2);
-	}
-	else{
-		if(is_empty_stack(stack1)){
-			printf("queue is empty\n");
-			return 1;
-		}
-		stack1_to_stack2(stack1,stack2);
-		printf("delete %d\n",stack2->top->num);
-		pop(stack2);
-	}
-	return 0;
-}
-int main()
-{
-	creat_queue();
-	push(1,stack1);
-	push(2,stack1);
-	push(3,stack1);
-	delete_head();
-	delete_head();
-	delete_head();
-	delete_head();
-	append_tail(6);
-	delete_head();
-}
+
+

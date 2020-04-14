@@ -8,6 +8,8 @@
 
 int j=1;
 
+String str;
+
 int StrAssign(String T,char *chars)
 { 
 	int i;
@@ -22,49 +24,64 @@ int StrAssign(String T,char *chars)
 	}
 }
 
-void creat_tree(BITREE **T)
+void creat_tree(struct tree  **T,char **str)
 {
 	char ch;
-	ch = str[j++];
+	if ('\0' == **str) {
+		return ;
+	}
+
+	ch = **str;
+	++(*str);
 	if('#'==ch)
 	{
 		*T=NULL;
 	}
 	else
 	{
-		*T=(BITREE*)malloc(sizeof(BITREE));
+		*T=(struct tree *)malloc(sizeof(struct tree ));
 		if(!*T)
 			exit(1);
 		(*T)->data=ch;
-		creat_tree(&(*T)->lchild);
-		creat_tree(&(*T)->rchild);
+		creat_tree(&(*T)->lchild,str);
+		creat_tree(&(*T)->rchild,str);
 	}
 }
 
-void PreOrderTraverse(BITREE * T)
+void pre_order_traverse(struct tree  * T)
 { 
 	if(T==NULL)
 		return;
 	printf("%c",T->data);
-	PreOrderTraverse(T->lchild);
-	PreOrderTraverse(T->rchild);
+	pre_order_traverse(T->lchild);
+	pre_order_traverse(T->rchild);
 }
 
-void InOrderTraverse(BITREE *T)
+void middle_order_traverse(struct tree  *T)
 { 
 	if(T==NULL)
 		return;
-	InOrderTraverse(T->lchild);
+	middle_order_traverse(T->lchild);
 	printf("%c",T->data);
-	InOrderTraverse(T->rchild);
+	middle_order_traverse(T->rchild);
 }
 
-void EndOrderTraverse(BITREE *T)
+void end_order_traverse(struct tree  *T)
 {
 	if(T==NULL)
 		return;
-	EndOrderTraverse(T->lchild);
-	EndOrderTraverse(T->rchild);
+	end_order_traverse(T->lchild);
+	end_order_traverse(T->rchild);
 	printf("%c",T->data);
+}
+
+void test_tree(struct tree *root)
+{
+	pre_order_traverse(root);
+	printf("\n");
+	middle_order_traverse(root);
+	printf("\n");
+	end_order_traverse(root);
+	printf("\n");
 }
 

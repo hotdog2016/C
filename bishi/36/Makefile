@@ -1,9 +1,14 @@
-objs =  queue.o tree.o stack.o
+objs = list.o stack.o queue.o tree.o test_36_1.o
+
+vpath  %.c ../queue
 vpath  %.c ../tree
 vpath  %.c ../stack
+vpath  %.c ../list
+
 main:$(objs)
 	gcc -o $@ $^
 	rm $(objs)
+
 %.o:%.c
 	gcc -o $@ -c $<
 .PHONY : clean

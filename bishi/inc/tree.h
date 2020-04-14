@@ -1,18 +1,18 @@
 #ifndef TREE_H
 #define TREE_H
 
-typedef struct BiTree{
+struct tree{
 	char data;
-	struct BiTree *lchild;
-	struct BiTree *rchild;
-}BITREE;
+	struct tree *lchild;
+	struct tree *rchild;
+};
 
 typedef char  String[100];
-String str;
-
 int StrAssign(String T,char *chars);
-void creat_tree(BITREE **T);
-void PreOrderTraverse(BITREE * T);
-void InOrderTraverse(BITREE *T);
-void EndOrderTraverse(BITREE *T);
+void creat_tree(struct tree **T,char **str);
+void pre_order_traverse(struct tree * T);
+void middle_order_traverse(struct tree *T);
+void end_Order_traverse(struct tree *T);
+void test_tree(struct tree *);
+
 #endif

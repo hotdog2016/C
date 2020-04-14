@@ -1,12 +1,14 @@
 #ifndef QUEUE_H
 #define QUEUE_H
-struct queue{
-	struct stack *head;
-	struct stack *tail;
-};
 
-int append_queue(struct queue *queue);
-int delete_queue(struct queue *queue);
-void creat_queue();
+struct queue *creat_queue();
+
+struct queue{
+	void *data;
+	void (*push)(void *,struct queue **);
+	void *(*pop)(struct queue **);
+	struct queue *tail;
+	struct queue *next;
+};
 
 #endif

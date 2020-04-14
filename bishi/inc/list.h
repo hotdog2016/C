@@ -4,6 +4,8 @@
 struct list {
     int num;
     struct list* next;
+
+	struct list* sibling;
 };
 
 struct list* creat_list(int* num , int length);
