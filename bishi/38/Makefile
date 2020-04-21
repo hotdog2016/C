@@ -1,4 +1,4 @@
-objs = list.o stack.o queue.o tree.o test_38_1.o
+objs = list.o stack.o queue.o tree.o test_38_2.o
 
 vpath  %.c ../queue
 vpath  %.c ../tree

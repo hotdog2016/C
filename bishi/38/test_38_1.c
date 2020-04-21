@@ -13,7 +13,7 @@ void print_string( char *str )
 	char *ch = str;
 	while ( *ch != '\0' )
 	{
-		printf("%c ",*ch); 
+		printf("%c",*ch); 
 		ch++;
 	}
 	printf("\n");
@@ -36,7 +36,6 @@ void permutation_and_combination(char *start , char *end ,char *str)
 		print_string(str);
 		return;
 	}
-
 	while ( *p2 != '\0' )
 	{
 		swap( p1 , p2 );
@@ -51,7 +50,7 @@ int main()
 	
 	char *str = NULL;
 	char tmp;
-	char *const_string = "abc";
+	char *const_string = "abcd";
 	str = (char *)malloc( sizeof(char)*100 );
 
 	memcpy( str , const_string , strlen( const_string ) );
