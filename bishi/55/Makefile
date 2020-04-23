@@ -1,7 +1,8 @@
-objs = 53_3.o list.o
+objs = 55_2.o list.o tree.o
 CC=g++
 
 vpath %.c ../list
+vpath %.c ../tree
 
 main:$(objs)
 	$(CC) -o $@ $^ 

@@ -24,7 +24,7 @@ int StrAssign(String T,char *chars)
 	}
 }
 
-void creat_tree(struct tree  **T,char **str)
+void creat_tree(struct tree  **T,const char **str)
 {
 	char ch;
 	if ('\0' == **str) {
