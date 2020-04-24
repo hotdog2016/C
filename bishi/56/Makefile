@@ -1,4 +1,4 @@
-objs = 55_1.o list.o tree.o
+objs = 56_2.o list.o tree.o
 CC=g++
 
 vpath %.c ../list
