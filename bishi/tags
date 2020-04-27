@@ -22,12 +22,45 @@
 %.o	36/Makefile	/^%.o:%.c$/;"	t
 %.o	37/Makefile	/^%.o:%.c$/;"	t
 %.o	38/Makefile	/^%.o:%.c$/;"	t
+%.o	49/Makefile	/^%.o:%.c$/;"	t
 %.o	5/makefile	/^%.o: %.c$/;"	t
+%.o	50/Makefile	/^%.o:%.c$/;"	t
+%.o	51/Makefile	/^%.o:%.c$/;"	t
+%.o	52/Makefile	/^%.o:%.c$/;"	t
+%.o	52/Makefile	/^%.o:%.cc$/;"	t
+%.o	53/Makefile	/^%.o:%.c$/;"	t
+%.o	53/Makefile	/^%.o:%.cc$/;"	t
+%.o	54/Makefile	/^%.o:%.c$/;"	t
+%.o	54/Makefile	/^%.o:%.cc$/;"	t
+%.o	55/Makefile	/^%.o:%.c$/;"	t
+%.o	55/Makefile	/^%.o:%.cc$/;"	t
+%.o	56/Makefile	/^%.o:%.c$/;"	t
+%.o	56/Makefile	/^%.o:%.cc$/;"	t
+%.o	57/Makefile	/^%.o:%.c$/;"	t
+%.o	57/Makefile	/^%.o:%.cc$/;"	t
 %.o	6/makefile	/^%.o: %.c$/;"	t
+%.o	60/Makefile	/^%.o:%.c$/;"	t
+%.o	60/Makefile	/^%.o:%.cc$/;"	t
+%.o	61/Makefile	/^%.o:%.c$/;"	t
+%.o	61/Makefile	/^%.o:%.cc$/;"	t
+%.o	62/Makefile	/^%.o:%.c$/;"	t
+%.o	62/Makefile	/^%.o:%.cc$/;"	t
 %.o	7/makefile	/^%.o: %.c$/;"	t
 %.o	8/makefile	/^%.o: %.c$/;"	t
 BITREE	8/test_8_1.c	/^}BITREE;$/;"	t	typeref:struct:BiTree	file:
 BiTree	8/test_8_1.c	/^typedef struct BiTree{$/;"	s	file:
+CC	49/Makefile	/^CC=g++$/;"	m
+CC	50/Makefile	/^CC=g++$/;"	m
+CC	51/Makefile	/^CC=g++$/;"	m
+CC	52/Makefile	/^CC=g++$/;"	m
+CC	53/Makefile	/^CC=g++$/;"	m
+CC	54/Makefile	/^CC=g++$/;"	m
+CC	55/Makefile	/^CC=g++$/;"	m
+CC	56/Makefile	/^CC=g++$/;"	m
+CC	57/Makefile	/^CC=g++$/;"	m
+CC	60/Makefile	/^CC=g++$/;"	m
+CC	61/Makefile	/^CC=g++$/;"	m
+CC	62/Makefile	/^CC=g++$/;"	m
 COLUMNS	12/test_12_1.c	/^#define COLUMNS /;"	d	file:
 COLUMNS	13/test_13_1.c	/^#define COLUMNS /;"	d	file:
 EndOrderTraverse	7/test_7_1.c	/^void EndOrderTraverse(PTREE T)$/;"	f	typeref:typename:void
@@ -67,6 +100,7 @@ append_tail	9/test_9_1.c	/^int append_tail(int val)$/;"	f	typeref:typename:int
 change_string	5/test5_1.c	/^int change_string(char * string,int blank_counts)$/;"	f	typeref:typename:int
 cheack_blank	5/test5_1.c	/^int cheack_blank(const char * string)$/;"	f	typeref:typename:int
 check	13/test_13_1.c	/^int check(int *matrix,int rows,int columns,int row,int col,int max,bool *bool_matrix)$/;"	f	typeref:typename:int
+check_is_straight	61/61_1.cc	/^bool check_is_straight(vector<int> deck)$/;"	f	typeref:typename:bool
 check_parent	8/test_8_1.c	/^BITREE *check_parent(BITREE * node)$/;"	f	typeref:typename:BITREE *
 check_sequence_is_tree	33/test_33_1.c	/^bool check_sequence_is_tree(int *start,int *end)$/;"	f	typeref:typename:bool
 check_sequences	31/test_31_1.c	/^bool check_sequences( int *seq1,int *seq2, struct stack *stack , int length )$/;"	f	typeref:typename:bool
@@ -88,7 +122,20 @@ clean	35/Makefile	/^clean:$/;"	t
 clean	36/Makefile	/^clean:$/;"	t
 clean	37/Makefile	/^clean:$/;"	t
 clean	38/Makefile	/^clean:$/;"	t
+clean	49/Makefile	/^clean:$/;"	t
+clean	50/Makefile	/^clean:$/;"	t
+clean	51/Makefile	/^clean:$/;"	t
+clean	52/Makefile	/^clean:$/;"	t
+clean	53/Makefile	/^clean:$/;"	t
+clean	54/Makefile	/^clean:$/;"	t
+clean	55/Makefile	/^clean:$/;"	t
+clean	56/Makefile	/^clean:$/;"	t
+clean	57/Makefile	/^clean:$/;"	t
+clean	60/Makefile	/^clean:$/;"	t
+clean	61/Makefile	/^clean:$/;"	t
+clean	62/Makefile	/^clean:$/;"	t
 combine	38/test_38_2.c	/^void combine( char *str , int num ,char *end)$/;"	f	typeref:typename:void
+combine_list	52/52_1.cc	/^void combine_list(struct list *list1,struct list *list2,struct list *list3)$/;"	f	typeref:typename:void
 combine_list1_list2	25/test_25_1.c	/^struct list *combine_list1_list2( struct list *head1,struct list *head2)$/;"	f	typeref:struct:list *
 construct_tree	7/test_7_1.c	/^PTREE construct_tree(int *PreOrderStart,\\$/;"	f	typeref:typename:PTREE
 construct_tree_core	7/test_7_1.c	/^PTREE construct_tree_core(int *PreOrderStart,\\$/;"	f	typeref:typename:PTREE
@@ -96,6 +143,7 @@ convert_core	36/test_36_1.c	/^void convert_core( struct tree *tree_node , struct
 copy_list	35/test_35_1.c	/^struct list *copy_list( struct list *list )$/;"	f	typeref:struct:list *
 count_path	13/test_13_1.c	/^int count_path(int *matrix,int rows,int columns,int max)$/;"	f	typeref:typename:int
 count_range	3/test3_2.c	/^int count_range(int * vector,int lenth,int start,int end)$/;"	f	typeref:typename:int
+count_reverse_pairs	51/51_1.cc	/^inline void count_reverse_pairs($/;"	f	typeref:typename:void
 creat_copy_node	35/test_35_1.c	/^void creat_copy_node( struct list ** head)$/;"	f	typeref:typename:void
 creat_list	18/test_18_1.c	/^struct list* creat_list(int* num)$/;"	f	typeref:struct:list *
 creat_list	6/test_6_1.c	/^ListNode *creat_list(int num)$/;"	f	typeref:typename:ListNode *
@@ -108,11 +156,14 @@ creat_queue	queue/queue.c	/^struct queue *creat_queue()$/;"	f	typeref:struct:que
 creat_stack	6/test_6_1.c	/^STACK * creat_stack()$/;"	f	typeref:typename:STACK *
 creat_stack	stack/stack.c	/^struct stack *creat_stack()$/;"	f	typeref:struct:stack *
 creat_tree	8/test_8_1.c	/^void creat_tree(BITREE **T)$/;"	f	typeref:typename:void
-creat_tree	tree/tree.c	/^void creat_tree(struct tree  **T,char **str)$/;"	f	typeref:typename:void
+creat_tree	tree/tree.c	/^void creat_tree(struct tree  **T,const char **str)$/;"	f	typeref:typename:void
 data	8/test_8_1.c	/^	char data;$/;"	m	struct:BiTree	typeref:typename:char	file:
 data	inc/queue.h	/^	void *data;$/;"	m	struct:queue	typeref:typename:void *
 data	inc/stack.h	/^	void *data;$/;"	m	struct:stack	typeref:typename:void *
 data	inc/tree.h	/^	char data;$/;"	m	struct:tree	typeref:typename:char
+deep_of_tree	55/55_1.cc	/^int deep_of_tree(struct tree *root)$/;"	f	typeref:typename:int
+deep_of_tree	55/55_2.cc	/^int deep_of_tree(struct tree *root)$/;"	f	typeref:typename:int
+deep_of_tree	57/57_2.cc	/^int deep_of_tree(struct tree *root)$/;"	f	typeref:typename:int
 delete_head	9/queue.c	/^int delete_head()$/;"	f	typeref:typename:int
 delete_head	9/test_9_1.c	/^int delete_head()$/;"	f	typeref:typename:int
 delete_node	18/test_18_1.c	/^int delete_node(struct list** head, struct list* node)$/;"	f	typeref:typename:int
@@ -120,14 +171,30 @@ delete_node	list/list.c	/^int delete_node(struct list** head, struct list* node)
 digital_sum	13/test_13_1.c	/^int digital_sum(int num)$/;"	f	typeref:typename:int
 end_order_traverse	tree/tree.c	/^void end_order_traverse(struct tree  *T)$/;"	f	typeref:typename:void
 exchange	27/test_27_1.c	/^void exchange(struct tree *root)$/;"	f	typeref:typename:void
+find_Kth_largest_node	54/54_1.cc	/^struct tree * find_Kth_largest_node(struct tree *root,int k)$/;"	f	typeref:struct:tree *
+find_first_1_bit	56/56_1.cc	/^int find_first_1_bit(int num)$/;"	f	typeref:typename:int
+find_first_char_without_duplication	50/50_1.cc	/^char find_first_char_without_duplication($/;"	f	typeref:typename:char
+find_first_common_node	52/52_1.cc	/^struct list *find_first_common_node(struct list *list1,struct list *list2)$/;"	f	typeref:struct:list *
+find_lack_number	53/53_2.cc	/^int find_lack_number(int num_array[],int array_len)$/;"	f	typeref:typename:int
+find_lack_number	53/53_3.cc	/^int find_lack_number(int num_array[],int array_len)$/;"	f	typeref:typename:int
+find_lack_number_core	53/53_2.cc	/^int find_lack_number_core(int num_array[],int *start,int *end)$/;"	f	typeref:typename:int
+find_lack_number_core	53/53_3.cc	/^int find_lack_number_core(int num_array[],int *start,int *end)$/;"	f	typeref:typename:int
+find_last_apperance	53/53_1.cc	/^int *find_last_apperance(int num,int *start,int *end)$/;"	f	typeref:typename:int *
 find_lchild	8/test_8_1.c	/^BITREE * find_lchild(BITREE * T)$/;"	f	typeref:typename:BITREE *
 find_loop_in_list	23/test_23_1.c	/^struct list *find_loop_in_list(struct list *head)$/;"	f	typeref:struct:list *
 find_node	18/test_18_1.c	/^struct list* find_node(struct list** head, int num)$/;"	f	typeref:struct:list *
 find_node	8/test_8_1.c	/^void find_node(BITREE * T,char data,BITREE ** node)$/;"	f	typeref:typename:void
 find_node	list/list.c	/^struct list* find_node(struct list** head, int num)$/;"	f	typeref:struct:list *
 find_num	4/test4_1.c	/^int find_num(int vector[4][4],int culomn,int row,int num)$/;"	f	typeref:typename:int
+find_number_appear_once	56/56_2.cc	/^int find_number_appear_once(vector<int> int_vec)$/;"	f	typeref:typename:int
+find_number_without_deplication	56/56_1.cc	/^int find_number_without_deplication(vector<int> num_vector)$/;"	f	typeref:typename:int
+find_numbers_apperant_counts	53/53_1.cc	/^int find_numbers_apperant_counts(int num,int num_array[],const int array_len)$/;"	f	typeref:typename:int
+find_numbers_first_apperance	53/53_1.cc	/^int *find_numbers_first_apperance(int num,int *start,int *end)$/;"	f	typeref:typename:int *
 find_path	34/test_34_1.c	/^void find_path( struct tree *root , int num )$/;"	f	typeref:typename:void
 find_path_sum	34/test_34_1.c	/^void find_path_sum( struct tree *root , int num )$/;"	f	typeref:typename:void
+find_reverse_pairs	51/51_1.cc	/^int find_reverse_pairs(int array[],int len , int array_tmp[])$/;"	f	typeref:typename:int
+find_reverse_pairs_core	51/51_1.cc	/^void find_reverse_pairs_core($/;"	f	typeref:typename:void
+find_ugly	49/49_1.cc	/^int find_ugly(const int n)$/;"	f	typeref:typename:int
 foo	10/test_10_1.c	/^unsigned long long foo(int n)$/;"	f	typeref:typename:unsigned long long
 get_min	inc/stack.h	/^	void *(*get_min)(struct stack *);$/;"	m	struct:stack	typeref:typename:void * (*)(struct stack *)
 get_min	stack/stack.c	/^void *get_min(struct stack *stack)$/;"	f	typeref:typename:void *
@@ -137,6 +204,8 @@ iInOrder	7/test_7_1.c	/^int iInOrder[8]={4,7,2,1,5,3,8,6};$/;"	v	typeref:typenam
 iPreOrder	7/test_7_1.c	/^int iPreOrder[8]={1,2,4,7,3,5,6,8};$/;"	v	typeref:typename:int[8]
 init_core	queue/queue.c	/^static struct queue *init_core()$/;"	f	typeref:struct:queue *	file:
 init_core	stack/stack.c	/^static struct stack *init_core()$/;"	f	typeref:struct:stack *	file:
+is_balance_tree	55/55_2.cc	/^bool is_balance_tree(struct tree *root , int& deepth)$/;"	f	typeref:typename:bool
+is_balance_tree	57/57_2.cc	/^bool is_balance_tree(struct tree *root , int& deepth)$/;"	f	typeref:typename:bool
 is_child_tree_recusion	26/test_26_1.c	/^bool is_child_tree_recusion(struct tree *root, struct tree *child_root)$/;"	f	typeref:typename:bool
 is_empty	stack/stack.c	/^bool is_empty(struct stack *stack)$/;"	f	typeref:typename:bool
 is_int	20/test_20_1.c	/^bool is_int(char **str)$/;"	f	typeref:typename:bool
@@ -196,10 +265,37 @@ main	38/Makefile	/^main:$(objs)$/;"	t
 main	38/test_38_1.c	/^int main()$/;"	f	typeref:typename:int
 main	38/test_38_2.c	/^int main()$/;"	f	typeref:typename:int
 main	4/test4_1.c	/^int main()$/;"	f	typeref:typename:int
+main	49/49_1.cc	/^int main()$/;"	f	typeref:typename:int
+main	49/Makefile	/^main:$(objs)$/;"	t
 main	5/makefile	/^main:$(objects)$/;"	t
 main	5/test5_1.c	/^int main()$/;"	f	typeref:typename:int
+main	50/50_1.cc	/^int main()$/;"	f	typeref:typename:int
+main	50/Makefile	/^main:$(objs)$/;"	t
+main	51/51_1.cc	/^int main()$/;"	f	typeref:typename:int
+main	51/Makefile	/^main:$(objs)$/;"	t
+main	52/52_1.cc	/^int main()$/;"	f	typeref:typename:int
+main	52/Makefile	/^main:$(objs)$/;"	t
+main	53/53_1.cc	/^int main()$/;"	f	typeref:typename:int
+main	53/53_2.cc	/^int main()$/;"	f	typeref:typename:int
+main	53/53_3.cc	/^int main()$/;"	f	typeref:typename:int
+main	53/Makefile	/^main:$(objs)$/;"	t
+main	54/54_1.cc	/^int main()$/;"	f	typeref:typename:int
+main	54/Makefile	/^main:$(objs)$/;"	t
+main	55/55_1.cc	/^int main()$/;"	f	typeref:typename:int
+main	55/55_2.cc	/^int main()$/;"	f	typeref:typename:int
+main	55/Makefile	/^main:$(objs)$/;"	t
+main	56/56_1.cc	/^int main()$/;"	f	typeref:typename:int
+main	56/56_2.cc	/^int main()$/;"	f	typeref:typename:int
+main	56/Makefile	/^main:$(objs)$/;"	t
+main	57/57_2.cc	/^int main()$/;"	f	typeref:typename:int
+main	57/Makefile	/^main:$(objs)$/;"	t
 main	6/makefile	/^main:$(objects)$/;"	t
 main	6/test_6_1.c	/^int main()$/;"	f	typeref:typename:int
+main	60/60_1.cc	/^int main()$/;"	f	typeref:typename:int
+main	60/Makefile	/^main:$(objs)$/;"	t
+main	61/61_1.cc	/^int main()$/;"	f	typeref:typename:int
+main	61/Makefile	/^main:$(objs)$/;"	t
+main	62/Makefile	/^main:$(objs)$/;"	t
 main	7/makefile	/^main:$(objects)$/;"	t
 main	7/test_7_1.c	/^int main()$/;"	f	typeref:typename:int
 main	8/makefile	/^main:$(objects)$/;"	t
@@ -209,11 +305,14 @@ main	9/test_9_1.c	/^int main()$/;"	f	typeref:typename:int
 main	sort/sort.c	/^int main()$/;"	f	typeref:typename:int
 match_child_tree_recusion	26/test_26_1.c	/^bool match_child_tree_recusion(struct tree *root1, struct tree *root2)$/;"	f	typeref:typename:bool
 max_length	14/test_14_1.c	/^int max_length(int length)$/;"	f	typeref:typename:int
+merge_array	51/51_1.cc	/^void merge_array(int array[] , int array1[] ,int array1_len,$/;"	f	typeref:typename:void
 middle_order_traverse	tree/tree.c	/^void middle_order_traverse(struct tree  *T)$/;"	f	typeref:typename:void
 min	11/test_11_1.c	/^int min(int *numbers , int length)$/;"	f	typeref:typename:int
+min	49/49_1.cc	/^int min(int multiply2,int multiply3,int multiply5)$/;"	f	typeref:typename:int
 min_stack	inc/stack.h	/^	struct stack *min_stack;$/;"	m	struct:stack	typeref:struct:stack *
 mirror_tree	27/test_27_1.c	/^void mirror_tree(struct tree *root)$/;"	f	typeref:typename:void
 modify_copy_node_silbing	35/test_35_1.c	/^void modify_copy_node_silbing( struct list **head )$/;"	f	typeref:typename:void
+mymiddle_order_traverse	54/54_1.cc	/^void mymiddle_order_traverse(struct tree  *T , vector<struct tree*>& num_seq)$/;"	f	typeref:typename:void
 next	6/test_6_1.c	/^	struct stack *next;$/;"	m	struct:stack	typeref:struct:stack *	file:
 next	inc/list.h	/^    struct list* next;$/;"	m	struct:list	typeref:struct:list *
 next	inc/queue.h	/^	struct queue *next;$/;"	m	struct:queue	typeref:struct:queue *
@@ -243,6 +342,18 @@ objs	35/Makefile	/^objs = list.o stack.o queue.o tree.o test_35_1.o$/;"	m
 objs	36/Makefile	/^objs = list.o stack.o queue.o tree.o test_36_1.o$/;"	m
 objs	37/Makefile	/^objs = list.o stack.o queue.o tree.o test_37_1.o$/;"	m
 objs	38/Makefile	/^objs = list.o stack.o queue.o tree.o test_38_2.o$/;"	m
+objs	49/Makefile	/^objs = 49_1.o$/;"	m
+objs	50/Makefile	/^objs = 50_1.o$/;"	m
+objs	51/Makefile	/^objs = 51_1.o$/;"	m
+objs	52/Makefile	/^objs = 52_1.o list.o$/;"	m
+objs	53/Makefile	/^objs = 53_3.o list.o$/;"	m
+objs	54/Makefile	/^objs = 54_1.o list.o tree.o$/;"	m
+objs	55/Makefile	/^objs = 55_1.o list.o tree.o$/;"	m
+objs	56/Makefile	/^objs = 56_2.o list.o tree.o$/;"	m
+objs	57/Makefile	/^objs = 57_1.o list.o tree.o$/;"	m
+objs	60/Makefile	/^objs = 60_1.o list.o tree.o$/;"	m
+objs	61/Makefile	/^objs = 61_1.o list.o tree.o$/;"	m
+objs	62/Makefile	/^objs = 62_1.o list.o tree.o$/;"	m
 pHead	6/test_6_1.c	/^	struct Node * pHead;$/;"	m	struct:Node	typeref:struct:Node *	file:
 pNext	6/test_6_1.c	/^	struct Node * pNext;$/;"	m	struct:Node	typeref:struct:Node *	file:
 pTail	6/test_6_1.c	/^	struct Node * pTail;$/;"	m	struct:Node	typeref:struct:Node *	file:
@@ -265,6 +376,7 @@ print_shuzu	3/test3_1.c	/^int print_shuzu(int temp[])$/;"	f	typeref:typename:int
 print_string	38/test_38_1.c	/^void print_string( char *str )$/;"	f	typeref:typename:void
 print_string	38/test_38_2.c	/^void print_string( char *p[],int num )$/;"	f	typeref:typename:void
 print_tree_layer	32/test_32_1.c	/^void print_tree_layer(struct tree *root)$/;"	f	typeref:typename:void
+probability	60/60_1.cc	/^vector<int> probability(int dice_num)$/;"	f	typeref:typename:vector<int>
 push	6/test_6_1.c	/^int push(int num,STACK * stack)$/;"	f	typeref:typename:int
 push	inc/queue.h	/^	void (*push)(void *,struct queue **);$/;"	m	struct:queue	typeref:typename:void (*)(void *,struct queue **)
 push	inc/stack.h	/^	void (*push)(void *,struct stack **);$/;"	m	struct:stack	typeref:typename:void (*)(void *,struct stack **)
@@ -273,7 +385,8 @@ push_core	queue/queue.c	/^static void push_core(void *p, struct queue **queue)$/
 push_core	stack/stack.c	/^static void push_core( void *data,struct stack **stack)$/;"	f	typeref:typename:void	file:
 queue	32/test_32_1.c	/^static struct queue *queue = NULL;$/;"	v	typeref:struct:queue *	file:
 queue	inc/queue.h	/^struct queue{$/;"	s
-quick	sort/sort.c	/^void quick(int *numbers,int length,int start,int end)$/;"	f	typeref:typename:void
+quick_sort	61/61_1.cc	/^void quick_sort(vector<int> &numbers,int length,int start,int end)$/;"	f	typeref:typename:void
+quick_sort	sort/sort.c	/^void quick_sort(int *numbers,int length,int start,int end)$/;"	f	typeref:typename:void
 rchild	7/test_7_1.c	/^	 struct Tree *rchild;$/;"	m	struct:Tree	typeref:struct:Tree *	file:
 rchild	8/test_8_1.c	/^	struct BiTree *rchild;$/;"	m	struct:BiTree	typeref:struct:BiTree *	file:
 rchild	inc/tree.h	/^	struct tree *rchild;$/;"	m	struct:tree	typeref:struct:tree *
@@ -307,6 +420,7 @@ str_tmp	28/test_28_1.c	/^String str_tmp;$/;"	v	typeref:typename:String
 sum	34/test_34_1.c	/^int sum = 0;$/;"	v	typeref:typename:int
 swap	3/test3_1.c	/^int swap(int * a,int * b)$/;"	f	typeref:typename:int
 swap	38/test_38_1.c	/^void swap( char *ch1,char *ch2)$/;"	f	typeref:typename:void
+swap	61/61_1.cc	/^void swap(int *num1,int *num2)$/;"	f	typeref:typename:void
 swap	sort/sort.c	/^void swap(int *num1,int *num2)$/;"	f	typeref:typename:void
 tail	inc/queue.h	/^	struct queue *tail;$/;"	m	struct:queue	typeref:struct:queue *
 test	11/test_11_1.c	/^int test(int *numbers,int length)$/;"	f	typeref:typename:int

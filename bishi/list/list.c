@@ -13,11 +13,11 @@ struct list* creat_list(int* num ,int length)
     head->next = NULL;
 
     for (int i = 0; i < length; ++i) {
-	if (0 == i) {
-	    head->num = num[i];
-	    current = head;
-	    continue;
-	}
+	  if (0 == i) {
+	      head->num = num[i];
+	      current = head;
+	      continue;
+	  }
 
 	new_node = malloc(sizeof(struct list));
 	new_node->num = num[i];

@@ -1,4 +1,4 @@
-cscope 15 $HOME/workspace/C/bishi/.rootdir/cscope -q 0000000279 0000051873
+cscope 15 $HOME/workspace/C/bishi/.rootdir/cscope -q 0000000279 0000051897
 	@/home/htodog/workspace/C/bishi/10/test_10_1.c
 
 5 
@@ -9713,7 +9713,7 @@ ch¬s
 Œ“
  **
 T
-,**
+,cÚ¡ **
 ¡r
 );
 
@@ -10540,7 +10540,7 @@ tmp
 }
 
 19 
-	$quick
+	$quick_sÜt
 (*
 numb”s
 ,
@@ -10646,7 +10646,7 @@ p1
 )
 
 42 
-	`quick
+	`quick_sÜt
 (
 numb”s
 ,
@@ -10664,7 +10664,7 @@ p1
 )
 
 44 
-	`quick
+	`quick_sÜt
 (
 numb”s
 ,
@@ -10704,7 +10704,7 @@ LEN
 );
 
 52 
-	`quick
+	`quick_sÜt
 (
 nums
 , 8 , 0 , 
@@ -11307,7 +11307,7 @@ ch¬s
 Œ“
  **
 T
-,**
+,cÚ¡ **
 ¡r
 )
 
