@@ -5,6 +5,7 @@ extern "C"{
 }
 
 #include <iostream>
+
 #include <memory>
 #include <string>
 
@@ -13,6 +14,7 @@ extern "C"{
 #include <list>
 
 using namespace std;
+
 /*找到包含节点node的路径
  * 每当往下遍历一个节点，就将此节点放入链表中，节点下面
  * 如果没有要寻找的节点那就将这个节点从链表删除。最后就
@@ -93,12 +95,10 @@ struct tree *find_public_parent(
   std::list<struct tree *> path2;
   path1.push_back(root);
   path2.push_back(root);
-  cout<<"123"<<endl;
   find_path(root,node1,path1);
   find_path(root,node2,path2);
   return find_last_common_node(path1,path2);
 }
-
 int main()
 {
   string str_cc("532##4##76##8##");
