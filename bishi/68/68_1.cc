@@ -1,21 +1,15 @@
 /*寻找两个节点的最公共祖先*/
- 
 extern "C"{
 #include "../inc/list.h"
 #include "../inc/tree.h"
 }
- 
 #include <iostream>
-
 #include <memory>
 #include <string>
-
 #include <iterator>
 #include <vector>
 #include <list>
-
 using namespace std;
-
 /*找到包含节点node的路径
  * 每当往下遍历一个节点，就将此节点放入链表中，节点下面
  * 如果没有要寻找的节点那就将这个节点从链表删除。最后就
@@ -29,14 +23,12 @@ bool find_path(
     std::list<struct tree *> &path)
 {
   bool found = false;
-
   if (nullptr == root) {
     return false;
   }
   if (root->data == node) {
     return true;
   }
-
   path.push_back(root->lchild);
   found = find_path(
       root->lchild,
@@ -49,7 +41,6 @@ bool find_path(
     //如果找到了，就网上返回，不再继续遍历后面的节点了。
     return true;
   }
-
   path.push_back(root->rchild);
   found = find_path(
       root->rchild,
@@ -60,7 +51,6 @@ bool find_path(
   } else {
     return true;
   }
-
   return false;
 }
 /* 找到两条路径的最后一个公共节点，此节点就是这两个节点的最低
@@ -82,10 +72,8 @@ struct tree *find_last_common_node(
     ++iter1;
     ++iter2;
   }
-
   return last_public_node;
 }
-
 struct tree *find_public_parent(
     struct tree *root,
     char node1,
@@ -103,12 +91,9 @@ struct tree *find_public_parent(
 int main()
 {
   string str_cc("532##4##76##8##");
-
   const char *str = str_cc.c_str();
-
   struct tree *tree = nullptr;
   struct tree *parent_node = nullptr;
-
   creat_tree(&tree,&str);
   parent_node = find_public_parent(tree,'3','8');
   if (nullptr != parent_node) {
@@ -117,5 +102,3 @@ int main()
   }
   cout<<"can't find"<<endl;
 }
-
-
