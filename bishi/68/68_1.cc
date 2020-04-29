@@ -1,9 +1,10 @@
 /*寻找两个节点的最公共祖先*/
+ 
 extern "C"{
 #include "../inc/list.h"
 #include "../inc/tree.h"
 }
-
+ 
 #include <iostream>
 
 #include <memory>
